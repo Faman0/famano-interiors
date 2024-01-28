@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famano Interiors</title>
+    <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'PP Neue Montreal', sans-serif;
+        }
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(backgroundgif3.gif);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar {
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 25%;
+            cursor: pointer;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 0;
+            background: rgb(171, 172, 188);
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+
+        .navbar ul li:hover::after {
+            width: 100%;
+        }
+
+        .content {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: #fff;
+        }
+
+        .content h1 {
+            font-size: 40px;
+            margin-top: 80px;
+        }
+
+        .content p {
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 25px;
+        }
+
+        button {
+            width: 150px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #ffff;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        span {
+            background: rgb(171, 172, 188);
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        button:hover span {
+            width: 100%;
+        }
+
+        button:hover {
+            border: none;
+        }
+        a {
+  text-decoration: none;
+            color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="famano_logo_transparent_white.png" class="logo">
+            <ul>
+                <li><a href = "o_nas/o_nas.html">O nas</a></li>
+                 <li><a href = "nasze_projekty/nasze_projekty.html">Projekty | Realizacje</a></li>
+                 <li><a href = "współpraca/współpraca.html">Współpraca</a></li>  
+                 <li><a href = "kontakt/kontakt.html">Kontakt</a></li>  
+            </ul>
+        </div>
+        
+        <div class="content">
+                        <div>
+                <button type="button"><a href="https://www.facebook.com" target="_blank"><span></span>FB</a></button>
+    <button type="button"><a href="https://www.instagram.com/famano_interiors/" target="_blank"><span></span>IG</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/abrill-fatface.css">
+    <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet">
+                
+
+    <style>
+        body {
+            font-family: 'PP Neue Montreal', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(171, 172, 188);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+ h2 {
+    color: rgb(171, 172, 188);
+}
+  
+        .logo {
+            width: 30%;
+            height: auto;
+        }
+
+        .founder-container {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .founder-info {
+            padding: 20px;
+            flex: 1;
+            clear: both;
+        }
+
+        .founder-text {
+            text-align: left;
+            clear: both;
+        }
+
+        .photo-gallery-container {
+            width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .photo-gallery {
+            display: inline-block;
+            margin-right: 20px;
+            vertical-align: top;
+        }
+
+        .photo {
+            width: 400x;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: 10% auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .modal-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .close {
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .modal-arrow {
+        color: #fff; /* Set arrow color to white */
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        user-select: none;
+        }
+
+        .modal-left {
+            left: 10px;
+        }
+
+        .modal-right {
+            right: 10px;
+        }
+
+
+        .professional-experience {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        .experience-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .experience-item {
+            margin-bottom: 15px;
+        }
+
+        .additional-container {
+            flex-basis: 100%;
+            text-align: left;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="C:\Users\Magda\Desktop\Kuba\nowa_strona\wersja_1_1\index.html">
+            <img class="logo" src="famano_logo_transparent_white.png" alt="Logo">
+        </a>
+    </header>
+
+    <section>
+
+                <div class="founder-info founder-text">
+                <p>Wyjątkowe projekty powstają dzięki detalom. Chętnie poznamy Państwa pomysły i pomożemy w w ich realizacji tak, aby w naszym projekcie poczuli Państwo własne wnętrze. </p>
+                <h2>WLI</h2>
+                <p>Mieszkanie 80m2 z antresolą w Warszawie. Na zamówienie wnętrze zostało wzbogacone moimi obrazami. Technika: olej na płótnie.</p>
+            </div>
+
+            <div class="photo-gallery-container">
+                <img class="photo" src="Galeria_WLI/1.png" alt="Photo 1">
+                <img class="photo" src="Galeria_WLI/2.png" alt="Photo 2">
+                <img class="photo" src="Galeria_WLI/3.png" alt="Photo 3">
+                <img class="photo" src="Galeria_WLI/4.png" alt="Photo 4">
+                <img class="photo" src="Galeria_WLI/5.png" alt="Photo 5">
+            </div>
+       
+        <div class="founder-info founder-text">
+                <h2>MKW</h2>
+                <p>Mieszkanie 55m2 w nowym budownictwie w Katowicach. Zdjęcia z realizacji</p>
+            </div>
+
+            <div class="photo-gallery-container">
+                <img class="photo" src="Galeria_2_AT/1.png" alt="Photo 1">
+                <img class="photo" src="Galeria_2_AT/2.png" alt="Photo 2">
+                <img class="photo" src="Galeria_2_AT/3.png" alt="Photo 3">
+                <img class="photo" src="Galeria_2_AT/4.png" alt="Photo 4">
+                <img class="photo" src="Galeria_2_AT/5.png" alt="Photo 5">
+                <img class="photo" src="Galeria_2_AT/6.png" alt="Photo 6">
+                <img class="photo" src="Galeria_2_AT/7.png" alt="Photo 7">
+                <img class="photo" src="Galeria_2_AT/8.png" alt="Photo 8">
+                <img class="photo" src="Galeria_2_AT/9.png" alt="Photo 9">
+                <img class="photo" src="Galeria_2_AT/10.png" alt="Photo 10">
+            </div>
+        
+        <div class="founder-info founder-text">
+                <h2>WKR</h2>
+                <p>Mieszkanie 70m2 w krakowskiej kamienicy</p>
+            </div>
+
+            <div class="photo-gallery-container">
+                <img class="photo" src="Galeria_3_K/1.png" alt="Photo 1">
+                <img class="photo" src="Galeria_3_K/2.png" alt="Photo 2">
+                <img class="photo" src="Galeria_3_K/3.png" alt="Photo 3">
+                <img class="photo" src="Galeria_3_K/4.png" alt="Photo 4">
+                <img class="photo" src="Galeria_3_K/5.png" alt="Photo 5">
+                <img class="photo" src="Galeria_3_K/6.png" alt="Photo 6">
+                <img class="photo" src="Galeria_3_K/7.png" alt="Photo 7">
+                <img class="photo" src="Galeria_3_K/8.png" alt="Photo 8">
+                <img class="photo" src="Galeria_3_K/9.png" alt="Photo 9">
+                <img class="photo" src="Galeria_3_K/10.png" alt="Photo 10">
+                <img class="photo" src="Galeria_3_K/11.png" alt="Photo 11">
+            </div>
+                <div class="founder-info founder-text">
+                <h2>DPRZ</h2>
+                <p>Dom 200m2 na Śląsku</p>
+            </div>
+                <div class="photo-gallery-container">
+                <img class="photo" src="Galeria_6_DP/1.png" alt="Photo 1">
+                <img class="photo" src="Galeria_6_DP/2.png" alt="Photo 2">
+                <img class="photo" src="Galeria_6_DP/3.png" alt="Photo 3">
+                <img class="photo" src="Galeria_6_DP/4.png" alt="Photo 4">
+                <img class="photo" src="Galeria_6_DP/5.png" alt="Photo 5">
+                <img class="photo" src="Galeria_6_DP/6.png" alt="Photo 6">
+                <img class="photo" src="Galeria_6_DP/7.png" alt="Photo 7">
+                <img class="photo" src="Galeria_6_DP/8.png" alt="Photo 8">
+                <img class="photo" src="Galeria_6_DP/9.png" alt="Photo 9">
+                <img class="photo" src="Galeria_6_DP/10.png" alt="Photo 10">
+                
+            </div>
+        <div class="founder-info founder-text">
+            <h2>SKR</h2>
+            <p>Projekt mieszkania 70m2 w nowoczesnej zabudowie</p>
+        </div>
+
+        <div class="photo-gallery-container">
+            <div class="photo-gallery">
+                <img class="photo" src="Galeria_1_Pajek/1.png" alt="Photo 1">
+                <img class="photo" src="Galeria_1_Pajek/2.png" alt="Photo 2">
+                <img class="photo" src="Galeria_1_Pajek/3.png" alt="Photo 3">
+                <img class="photo" src="Galeria_1_Pajek/4.png" alt="Photo 4">
+                <img class="photo" src="Galeria_1_Pajek/5.png" alt="Photo 5">
+                <img class="photo" src="Galeria_1_Pajek/6.png" alt="Photo 6">
+                <img class="photo" src="Galeria_1_Pajek/7.png" alt="Photo 7">
+            </div>
+
+            <div class="founder-info founder-text">
+                <h2>KBR</h2>
+                <p>Projekt kuchni oraz łazienki w mieszkaniu w Katowicach</p>
+            </div>
+
+            <div class="photo-gallery-container">
+                <img class="photo" src="Galeria_4_PK/1.png" alt="Photo 1">
+                <img class="photo" src="Galeria_4_PK/2.png" alt="Photo 1">
+                <img class="photo" src="Galeria_4_PK/3.png" alt="Photo 1">
+                <img class="photo" src="Galeria_4_PK/4.png" alt="Photo 1">
+                <img class="photo" src="Galeria_4_PK/5.png" alt="Photo 1">
+                <img class="photo" src="Galeria_4_PK/6.png" alt="Photo 1">
+
+            </div>
+            <div class="founder-info founder-text">
+                <h2>DRŚ</h2>
+                <p>Projekt domu w Rudzie Śląskiej</p>
+            </div>
+
+            <div class="photo-gallery-container">
+                <img class="photo" src="Galeria_5_LZ/1_Salon.png" alt="Photo 1">
+                <img class="photo" src="Galeria_5_LZ/2.png" alt="Photo 1">
+                <img class="photo" src="Galeria_5_LZ/3.png" alt="Photo 1">
+                <img class="photo" src="Galeria_5_LZ/4.png" alt="Photo 1">
+                <img class="photo" src="Galeria_5_LZ/5.png" alt="Photo 1">
+                <img class="photo" src="Galeria_5_LZ/6.png" alt="Photo 1">
+                <img class="photo" src="Galeria_5_LZ/7.png" alt="Photo 1">
+                <img class="photo" src="Galeria_5_LZ/8.png" alt="Photo 1">
+
+            </div>
+    </section>
+
+<div id="myModal" class="modal" onclick="closeModal()">
+    <span class="close">×</span>
+    <span class="modal-arrow modal-left" onclick="navigateImages(-1)">&lt;</span>
+    <img class="modal-content" id="modalImg">
+    <span class="modal-arrow modal-right" onclick="navigateImages(1)">&gt;</span>
+</div>
+
+
+<script>
+    let currentImageIndex = 0;
+    let photosArray = [];
+
+    function openModal(imgSrc) {
+        document.getElementById('modalImg').src = imgSrc;
+        document.getElementById('myModal').style.display = 'block';
+        initializePhotosArray();
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+
+    function initializePhotosArray() {
+        photosArray = Array.from(document.querySelectorAll('.photo')).map(photo => photo.src);
+        currentImageIndex = photosArray.indexOf(document.getElementById('modalImg').src);
+        updateModalArrows();
+    }
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            closeModal();
+        } else if (event.key === 'ArrowRight') {
+            navigateImages(1);
+        } else if (event.key === 'ArrowLeft') {
+            navigateImages(-1);
+        }
+    });
+
+    const photos = document.querySelectorAll('.photo');
+    photos.forEach(photo => {
+        photo.addEventListener('click', function () {
+            openModal(this.src);
+        });
+    });
+
+      function navigateImages(direction) {
+    currentImageIndex += direction;
+    if (currentImageIndex >= photosArray.length) {
+        currentImageIndex = 0;
+    } else if (currentImageIndex < 0) {
+        currentImageIndex = photosArray.length - 1;
+    }
+    document.getElementById('modalImg').src = photosArray[currentImageIndex];
+    updateModalArrows();
+    event.stopPropagation(); // Add this line to prevent event propagation
+}
+
+    function updateModalArrows() {
+        const modalLeftArrow = document.querySelector('.modal-left');
+        const modalRightArrow = document.querySelector('.modal-right');
+
+        modalLeftArrow.style.display = currentImageIndex === 0 ? 'none' : 'block';
+        modalRightArrow.style.display = currentImageIndex === photosArray.length - 1 ? 'none' : 'block';
+    }
+</script>
+</body>
+</html>

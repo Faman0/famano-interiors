@@ -149,12 +149,25 @@
   background: rgb(149, 150, 165);
   border: 0;
   color: #f5f6fa;
-  padding: 6px 16px; /* Smaller padding */
-  font-size: 14px; /* Smaller font size */
+  padding: 6px 16px; 
+  font-size: 14px; 
   border-radius: 8px;
   cursor: pointer;
-  position: relative; /* Change to relative positioning */
+  position: relative; 
     font-weight: 500;
+}
+            .medium-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #999;
+  vertical-align: middle;
+}
+
+
+.medium-checkbox:checked {
+  background-color: rgb(171,172,188); 
+  border-color: #007bff;
 }
     </style>
 </head>
@@ -179,6 +192,7 @@
                <input type="text" name="name" placeholder="Podaj swoje imię" class="contact-inputs" required>
                <input type="email" name="email" placeholder="Wpisz swojego maila" class="contact-inputs" required>
                <textarea name="message" rows="10" placeholder="Treść wiadomości" class="contact-inputs" required></textarea>
+               <input type="checkbox" name = "checkbox" class = "medium-checkbox" required> Wyrażam zgodę na przetwarzanie podanych danych w celu kontaktu z Famano Interiors
                <button type="submit"><span></span>Wyślij</button>
             </form>
     </div>

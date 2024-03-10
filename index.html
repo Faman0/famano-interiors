@@ -121,6 +121,38 @@
   text-decoration: none;
             color: white;
 }
+        .cookie-container {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgb(171, 172, 188);
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+  transition: 400ms;
+    text-align: center;
+}
+
+.cookie-container.active {
+  bottom: 0;
+}
+
+.cookie-container a {
+  color: #f5f6fa;
+}
+
+.cookie-btn {
+  background: rgb(149, 150, 165);
+  border: 0;
+  color: #f5f6fa;
+  padding: 6px 16px; /* Smaller padding */
+  font-size: 14px; /* Smaller font size */
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative; /* Change to relative positioning */
+    font-weight: 500;
+}
     </style>
 </head>
 <body>
@@ -143,5 +175,17 @@
             </div>
         </div>
     </div>
+         <div class="cookie-container">
+      <p>
+        Wykorzystujemy pliki cookies oraz technologie zbierające informacje w celach statycznych i marketingowych. Korzystając ze strony, zgadzasz się na ich użycie. Więcej w 
+        <a href="#">polityce prywatności</a>.
+      </p>
+
+      <button class="cookie-btn">
+        Rozumiem
+      </button>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
